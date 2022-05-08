@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/HelloWindow.dir/main.cpp.o -o HelloWindow  ../../external/glfw/src/libglfw3.a -lvulkan -lpthread -lrt -lm -ldl 

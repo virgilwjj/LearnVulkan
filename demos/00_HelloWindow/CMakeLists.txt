@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(HelloWindow)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    CXX_STANDARD 20
+    CXX_EXTENSIONS OFF
+    CXX_STANDARD_REQUIRED OFF
+)
+
+target_link_libraries(${PROJECT_NAME} glfw)
+
+find_package(Vulkan)
+target_link_libraries(${PROJECT_NAME} vulkan)
